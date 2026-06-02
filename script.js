@@ -1,9 +1,17 @@
+document.documentElement.classList.add('js-ready');
+
 // Loader
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.getElementById('loader')?.classList.add('hidden');
-  }, 2200);
-});
+function hideLoader() {
+  document.getElementById('loader')?.classList.add('hidden');
+}
+
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  setTimeout(hideLoader, 700);
+} else {
+  document.addEventListener('DOMContentLoaded', () => setTimeout(hideLoader, 700), { once: true });
+}
+window.addEventListener('load', () => setTimeout(hideLoader, 700), { once: true });
+setTimeout(hideLoader, 3000);
 
 // Custom cursor removed for reliable native cursor behavior.
 
@@ -13,6 +21,7 @@ const pageLinks = {
   home: 'index.html',
   about: 'about.html',
   portfolio: 'portfolio.html',
+  resume: 'resume.html',
   contact: 'contact.html'
 };
 

@@ -1,6 +1,7 @@
 vaibhav_portfolio_site/
 |-- index.html
 |-- about.html
+|-- resume.html
 |-- portfolio.html
 |-- contact.html
 |-- style.css

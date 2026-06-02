@@ -117,6 +117,14 @@ a, button, .project-card, .project-thumb[data-lb-type], .hamburger, #lb-close {
   background: rgba(2,8,24,0.92);
   box-shadow: 0 4px 40px rgba(0,0,0,0.4);
 }
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+}
 .nav-brand {
   font-family: 'Orbitron', monospace;
   font-size: 1.1rem; font-weight: 700;
@@ -663,11 +671,14 @@ footer span {
 }
 
 /* Scroll Reveal */
-.reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(.25,.46,.45,.94); }
+.reveal { opacity: 1; transform: none; transition: all 0.8s cubic-bezier(.25,.46,.45,.94); }
+.js-ready .reveal { opacity: 0; transform: translateY(40px); }
 .reveal.visible { opacity: 1; transform: translateY(0); }
-.reveal-left { opacity: 0; transform: translateX(-40px); transition: all 0.8s cubic-bezier(.25,.46,.45,.94); }
+.reveal-left { opacity: 1; transform: none; transition: all 0.8s cubic-bezier(.25,.46,.45,.94); }
+.js-ready .reveal-left { opacity: 0; transform: translateX(-40px); }
 .reveal-left.visible { opacity: 1; transform: translateX(0); }
-.reveal-right { opacity: 0; transform: translateX(40px); transition: all 0.8s cubic-bezier(.25,.46,.45,.94); }
+.reveal-right { opacity: 1; transform: none; transition: all 0.8s cubic-bezier(.25,.46,.45,.94); }
+.js-ready .reveal-right { opacity: 0; transform: translateX(40px); }
 .reveal-right.visible { opacity: 1; transform: translateX(0); }
 .reveal-d1 { transition-delay: 0.1s; }
 .reveal-d2 { transition-delay: 0.2s; }
