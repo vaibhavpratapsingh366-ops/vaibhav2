@@ -1,0 +1,20 @@
+vaibhav_portfolio_site/
+|-- index.html
+|-- about.html
+|-- portfolio.html
+|-- contact.html
+|-- style.css
+|-- script.js
+`-- assets/
+    |-- image-01.webp
+    |-- image-02.webp
+    |-- image-03.webp
+    |-- image-04.webp
+    |-- image-05.webp
+    |-- image-06.webp
+    |-- image-07.webp
+    |-- video-01.mp4
+    |-- video-02.mp4
+    |-- video-03.mp4
+    |-- video-04.mp4
+    `-- manifest.csv
